@@ -1,3 +1,4 @@
+[English Documentation](README.md) | [中文文档](README_CN.md)
 # NineData 社区版
 
 本文详细介绍 NineData 社区版，包括社区版的产品定位以及和企业版的多维度对比，帮助您快速了解社区版。
