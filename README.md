@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/3e253d72-d288-4043-bd00-989214aa1c05)# NineData 社区版
+# NineData 社区版
 
 本文详细介绍 NineData 社区版，包括社区版的产品定位以及和企业版的多维度对比，帮助您快速了解社区版。
 
