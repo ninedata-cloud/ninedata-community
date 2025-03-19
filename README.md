@@ -84,11 +84,7 @@ NineData 社区版是一个完全离线运行的**本地化部署**版本，无�
 
    ![image-20250310171459303](https://docs.ninedata.cloud/assets/images/image-20250310171459303-665e43ce5b19cdebe5096822db6132ba.png)
 
-   :::tip
-
    如果在步骤一中指定了其他容器名称，则需要把上述命令中的 `ninedata` 更换成您实际的容器名。
-
-   :::
 
 3. 在浏览器中输入 NineData 的连接地址即可打开 NineData 控制台的登录页，NineData 服务默认端口号为 `9999`，初始管理员账号与密码均为 `admin`。首次登录后页面会弹出修改密码窗口，请立即更改管理员密码。
 
