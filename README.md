@@ -50,6 +50,7 @@ Powered by self-developed CDC technology, it handles database migration, synchro
 
 - Docker installed on the server.
 - Minimum server specs: **4-core CPU, 16GB RAM, 200GB disk space**.
+- The CPU is based on the **Intel x86_64** architecture.
 
 **Steps**
 
