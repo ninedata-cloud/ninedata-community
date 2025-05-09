@@ -1,7 +1,3 @@
----
-sidebar_position: 4
----
-
 # NineData Community Edition Release Note
 
 ### Version: 4.1.0 (Officially released on 2025.05.09)
