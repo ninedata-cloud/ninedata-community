@@ -91,3 +91,461 @@ NineData 社区版是一个完全离线运行的**本地化部署**版本，无�
 3. 在浏览器中输入 NineData 的连接地址即可打开 NineData 控制台的登录页，NineData 服务默认端口号为 `9999`，初始管理员账号与密码均为 `admin`。首次登录后页面会弹出修改密码窗口，请立即更改管理员密码。
 
    ![image-20250310171539071](https://docs.ninedata.cloud/assets/images/image-20250310171539071-f968b89d265803e304be8b5814112dc5.png)
+
+### NineData 社区版与主流工具全方位对比
+**数据库 DevOps**
+<div class='table_detail_wrapper'><table><thead>
+  <tr>
+    <th colspan="2">对比项目</th>
+    <th>NineData 社区版</th>
+    <th>Archery</th>
+    <th>Yearning</th>
+    <th>Navicat</th>
+    <th>Flyway</th>
+    <th>Liquibase</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td rowspan="4">基础能力</td>
+    <td>更新迭代频率</td>
+    <td>高（持续交付，周度迭代）</td>
+    <td>中（季度级更新、开源社区驱动）</td>
+    <td>中（不定期更新、依赖社区贡献）</td>
+    <td>中（每年大版本、季度小更新）</td>
+    <td>中（定期功能增强，约半年一次）</td>
+    <td>中（定期维护，约季度更新）</td>
+  </tr>
+  <tr>
+    <td>部署模式</td>
+    <td>Docker 部署</td>
+    <td>Docker 部署</td>
+    <td>Docker 部署</td>
+    <td>桌面应用</td>
+    <td>CLI 集成 Java 集成</td>
+    <td>CLI 集成 Java 集成</td>
+  </tr>
+  <tr>
+    <td>支持数据源</td>
+    <td>国产数据库、数仓、多云数据库（如AWS、阿里云等）、MySQL、PG、Oracle、SQL Server、Db2 等</td>
+    <td>MySQL、PG、Redis 等</td>
+    <td>MySQL、PG</td>
+    <td>MySQL、PG、Oracle、SQL Server 等</td>
+    <td>MySQL、PG、Oracle 等主流数据库</td>
+    <td>主流数据库（类似 Flyway）</td>
+  </tr>
+  <tr>
+    <td>登录方式</td>
+    <td>账号密码/第三方登录/SSO(LDAP)</td>
+    <td>Web 账号/LDAP/OAuth</td>
+    <td>Web 账号/LDAP</td>
+    <td>本地账号/许可证</td>
+    <td>无（命令行）</td>
+    <td>无（命令行/代码）</td>
+  </tr>
+  <tr>
+    <td rowspan="5">SQL IDE</td>
+    <td>支持语言</td>
+    <td>中英文</td>
+    <td>中文为主</td>
+    <td>中文</td>
+    <td>多语言</td>
+    <td>英文</td>
+    <td>英文</td>
+  </tr>
+  <tr>
+    <td>SQL 窗口</td>
+    <td>支持（强）</td>
+    <td>支持</td>
+    <td>支持</td>
+    <td>支持（强）</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>对象可视化管理</td>
+    <td>支持</td>
+    <td>部分支持（表结构）</td>
+    <td>有限</td>
+    <td>支持（图形化）</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>查询结果集操作</td>
+    <td>导出、编辑</td>
+    <td>导出、编辑</td>
+    <td>导出</td>
+    <td>导出、编辑、图表</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>会话隔离</td>
+    <td>支持</td>
+    <td>支持</td>
+    <td>支持</td>
+    <td>支持</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td rowspan="9">SQL 审核与发布</td>
+    <td>SQL 变更发布</td>
+    <td>工单+自动化流程</td>
+    <td>工单审批+执行</td>
+    <td>工单审批</td>
+    <td>直接执行</td>
+    <td>直接执行迁移脚本</td>
+    <td>直接执行脚本</td>
+  </tr>
+  <tr>
+    <td>变更自动备份</td>
+    <td>支持</td>
+    <td>支持</td>
+    <td>支持</td>
+    <td>手动备份</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>审批流程</td>
+    <td>多级审批，可对接外部审批流程</td>
+    <td>多级审批</td>
+    <td>简单审批</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>Online DDL</td>
+    <td>原生支持</td>
+    <td>依赖 PT-OSC 等工具</td>
+    <td>依赖外部工具</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>Online DML</td>
+    <td>支持</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>内置 SQL 规范</td>
+    <td>多种数据库类型 200+ 内置规则/自定义</td>
+    <td>MySQL 部分规则</td>
+    <td>MySQL 部分规则</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>移动审批</td>
+    <td>支持</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>发布流程编排</td>
+    <td>支持</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>SQL 代码审核</td>
+    <td>强（自动化审核）</td>
+    <td>一般（自定义规则）</td>
+    <td>一般（内置规则）</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td rowspan="4">数据安全</td>
+    <td>敏感数据保护</td>
+    <td>智能数据分类分级，完善的数据脱敏 + 加密</td>
+    <td>支持手动设置，但可轻易绕过</td>
+    <td>支持手动设置，但可轻易绕过</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>权限授权模式</td>
+    <td>RBAC + ABAC、管理员授权 + 主动申请</td>
+    <td>RBAC、管理员授权 + 主动申请</td>
+    <td>RBAC、管理员授权</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>权限模型</td>
+    <td>细粒度权限（库/表/敏感列/模块/操作）</td>
+    <td>项目级隔离</td>
+    <td>用户级权限</td>
+    <td>本地权限</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>操作审计</td>
+    <td>全链路审计</td>
+    <td>完整日志</td>
+    <td>基础日志</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td rowspan="5">高级数据处理</td>
+    <td>数据导入</td>
+    <td>多格式导入，语法级别可控</td>
+    <td>支持 CSV/SQL</td>
+    <td>支持 CSV</td>
+    <td>多种格式（Excel、CSV等）</td>
+    <td>通过迁移脚本</td>
+    <td>通过脚本</td>
+  </tr>
+  <tr>
+    <td>数据导出</td>
+    <td>多格式导出，文件加密、水印保护</td>
+    <td>支持 CSV</td>
+    <td>支持 CSV</td>
+    <td>多种格式导出</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>数据归档与清理</td>
+    <td>自动归档（MySQL、PG）</td>
+    <td>手动（MySQL）</td>
+    <td>X</td>
+    <td>手动</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>数据追踪与回滚</td>
+    <td>自动解析 Binlog 逆向生成</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>数据生成</td>
+    <td>支持，仿真模版自定义</td>
+    <td>X</td>
+    <td>X</td>
+    <td>支持测试数据生成</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td rowspan="2">性能诊断</td>
+    <td>慢 SQL 性能分析</td>
+    <td>深度分析 + 优化建议（MySQL、PG、Oracle、Db2）</td>
+    <td>支持（MySQL）</td>
+    <td></td>
+    <td>基础分析</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>会话管理</td>
+    <td>查看/Kill会话</td>
+    <td>查看/Kill会话</td>
+    <td>查看会话</td>
+    <td>查看/Kill会话</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  </tbody></table></div>
+
+**数据复制**
+<div class='table_detail_wrapper'><table><thead>
+  <tr>
+    <th colspan="2">对比项</th>
+    <th>NineData</th>
+    <th>Canal</th>
+    <th>DataX</th>
+    <th>FlinkCDC</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td rowspan="4">基础功能</td>
+    <td>支持数据源种类</td>
+    <td>60+</td>
+    <td>1</td>
+    <td>30</td>
+    <td>10+</td>
+  </tr>
+  <tr>
+    <td>可视化数据源配置管理</td>
+    <td>支持</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>用户管理</td>
+    <td>支持</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>权限管理</td>
+    <td>支持</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td rowspan="13">核心功能</td>
+    <td>表结构迁移</td>
+    <td>支持</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>非表对象迁移</td>
+    <td>支持</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>全量数据迁移</td>
+    <td>支持</td>
+    <td>部分支持（大表不能成功迁移）</td>
+    <td>支持</td>
+    <td>支持</td>
+  </tr>
+  <tr>
+    <td>增量数据同步（DML）</td>
+    <td>支持</td>
+    <td>支持</td>
+    <td>X</td>
+    <td>支持</td>
+  </tr>
+  <tr>
+    <td>增量结构同步（DDL）</td>
+    <td>支持</td>
+    <td>X</td>
+    <td>X</td>
+    <td>仅支持 ADD Column</td>
+  </tr>
+  <tr>
+    <td>数据过滤</td>
+    <td>支持</td>
+    <td>支持</td>
+    <td>支持</td>
+    <td>支持</td>
+  </tr>
+  <tr>
+    <td>对象名映射</td>
+    <td>支持</td>
+    <td>支持</td>
+    <td>支持</td>
+    <td>支持</td>
+  </tr>
+  <tr>
+    <td>数据转换处理</td>
+    <td>支持</td>
+    <td>X</td>
+    <td>支持</td>
+    <td>支持</td>
+  </tr>
+  <tr>
+    <td>结构对比</td>
+    <td>支持</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>全量数据对比</td>
+    <td>支持</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>增量数据对比</td>
+    <td>支持</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>修改同步对象</td>
+    <td>支持</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>可视化任务配置与管理</td>
+    <td>支持</td>
+    <td>X</td>
+    <td>X</td>
+    <td>基本没有</td>
+  </tr>
+  <tr>
+    <td rowspan="6">任务管理</td>
+    <td>任务高可用异常自动容灾（任务级、服务器级）</td>
+    <td>支持</td>
+    <td>X</td>
+    <td>X</td>
+    <td>支持</td>
+  </tr>
+  <tr>
+    <td>任务暂停与恢复</td>
+    <td>支持</td>
+    <td>支持</td>
+    <td>支持</td>
+    <td>支持</td>
+  </tr>
+  <tr>
+    <td>任务限流</td>
+    <td>支持</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>告警</td>
+    <td>支持</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>可视化监控</td>
+    <td>支持</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>数据SQL查询窗口</td>
+    <td>支持</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+</tbody></table></div>
