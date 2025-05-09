@@ -82,3 +82,461 @@ Powered by self-developed CDC technology, it handles database migration, synchro
 3. Log in to the NineData console using the default credentials `admin/admin`, and change the password immediately upon first login.
 
    ![image-20250310171539071](https://docs.ninedata.cloud/en/assets/images/image-20250310171539071-217f967f9d5fe319957c3ea977bcbeb1.png)
+
+### Comprehensive Comparison of NineData Community Edition with Mainstream Tools
+**Database DevOps**
+<div class='table_detail_wrapper'><table><thead>
+  <tr>
+    <th colspan="2">Comparison Items</th>
+    <th>NineData Community Edition</th>
+    <th>Archery</th>
+    <th>Yearning</th>
+    <th>Navicat</th>
+    <th>Flyway</th>
+    <th>Liquibase</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td rowspan="4">Basic Capabilities</td>
+    <td>Update and Iteration Frequency</td>
+    <td>High (Continuous delivery, weekly iteration)</td>
+    <td>Medium (Quarterly updates, driven by the open-source community)</td>
+    <td>Medium (Irregular updates, dependent on community contributions)</td>
+    <td>Medium (Annual major versions, quarterly minor updates)</td>
+    <td>Medium (Regular feature enhancements, about once every six months)</td>
+    <td>Medium (Regular maintenance, quarterly updates)</td>
+  </tr>
+  <tr>
+    <td>Deployment Mode</td>
+    <td>Docker Deployment</td>
+    <td>Docker Deployment</td>
+    <td>Docker Deployment</td>
+    <td>Desktop Application</td>
+    <td>CLI Integrated with Java</td>
+    <td>CLI Integrated with Java</td>
+  </tr>
+  <tr>
+    <td>Supported Data Sources</td>
+    <td>Domestic databases, data warehouses, multi-cloud databases (such as AWS, Alibaba Cloud, etc.), MySQL, PG, Oracle, SQL Server, Db2, etc.</td>
+    <td>MySQL, PG, Redis, etc.</td>
+    <td>MySQL, PG</td>
+    <td>MySQL, PG, Oracle, SQL Server, etc.</td>
+    <td>MySQL, PG, Oracle, and other mainstream databases</td>
+    <td>Mainstream databases (similar to Flyway)</td>
+  </tr>
+  <tr>
+    <td>Login Method</td>
+    <td>Account password/third-party login/SSO(LDAP)</td>
+    <td>Web account/LDAP/OAuth</td>
+    <td>Web account/LDAP</td>
+    <td>Local account/License</td>
+    <td>No (Command line)</td>
+    <td>No (Command line/Code)</td>
+  </tr>
+  <tr>
+    <td rowspan="5">SQL IDE</td>
+    <td>Supported Languages</td>
+    <td>Chinese and English</td>
+    <td>Primarily Chinese</td>
+    <td>Chinese</td>
+    <td>Multiple languages</td>
+    <td>English</td>
+    <td>English</td>
+  </tr>
+  <tr>
+    <td>SQL Window</td>
+    <td>Supported (Strong)</td>
+    <td>Supported</td>
+    <td>Supported</td>
+    <td>Supported (Strong)</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>Object Visual Management</td>
+    <td>Supported</td>
+    <td>Partially supported (table structure)</td>
+    <td>Limited</td>
+    <td>Supported (Graphical)</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>Query Result Set Operations</td>
+    <td>Export, Edit</td>
+    <td>Export, Edit</td>
+    <td>Export</td>
+    <td>Export, Edit, Charts</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>Session Isolation</td>
+    <td>Supported</td>
+    <td>Supported</td>
+    <td>Supported</td>
+    <td>Supported</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td rowspan="9">SQL Review and Release</td>
+    <td>SQL Change Release</td>
+    <td>Work Order + Automated Process</td>
+    <td>Work Order Approval + Execution</td>
+    <td>Work Order Approval</td>
+    <td>Direct Execution</td>
+    <td>Direct Execution of Migration Scripts</td>
+    <td>Direct Execution of Scripts</td>
+  </tr>
+  <tr>
+    <td>Change Automatic Backup</td>
+    <td>Supported</td>
+    <td>Supported</td>
+    <td>Supported</td>
+    <td>Manual Backup</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>Approval Process</td>
+    <td>Multi-level approval, can be connected to external approval processes</td>
+    <td>Multi-level approval</td>
+    <td>Simple approval</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>Online DDL</td>
+    <td>Natively Supported</td>
+    <td>Dependent on tools such as PT-OSC</td>
+    <td>Dependent on external tools</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>Online DML</td>
+    <td>Supported</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>Built-in SQL Standards</td>
+    <td>200+ built-in rules for various database types / custom</td>
+    <td>Some rules for MySQL</td>
+    <td>Some rules for MySQL</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>Mobile Approval</td>
+    <td>Supported</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>Release Process Orchestration</td>
+    <td>Supported</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>SQL Code Review</td>
+    <td>Strong (Automated Review)</td>
+    <td>Average (Custom Rules)</td>
+    <td>Average (Built-in Rules)</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Data Security</td>
+    <td>Sensitive Data Protection</td>
+    <td>Intelligent data classification and grading, complete data desensitization + encryption</td>
+    <td>Support manual settings, but can be easily bypassed</td>
+    <td>Support manual settings, but can be easily bypassed</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>Permission Authorization Mode</td>
+    <td>RBAC + ABAC, administrator authorization + active application</td>
+    <td>RBAC, administrator authorization + active application</td>
+    <td>RBAC, administrator authorization</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>Permission Model</td>
+    <td>Fine-grained permissions (database/table/sensitive column/module/operation)</td>
+    <td>Project-level isolation</td>
+    <td>User-level permissions</td>
+    <td>Local permissions</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>Operation Audit</td>
+    <td>Full-link audit</td>
+    <td>Complete logs</td>
+    <td>Basic logs</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td rowspan="5">Advanced Data Processing</td>
+    <td>Data Import</td>
+    <td>Multi-format import, syntax-level controllable</td>
+    <td>Support for CSV/SQL</td>
+    <td>Support for CSV</td>
+    <td>Multiple formats (Excel, CSV, etc.)</td>
+    <td>Through migration scripts</td>
+    <td>Through scripts</td>
+  </tr>
+  <tr>
+    <td>Data Export</td>
+    <td>Multi-format export, file encryption, watermark protection</td>
+    <td>Support for CSV</td>
+    <td>Support for CSV</td>
+    <td>Multiple formats export</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>Data Archiving and Cleaning</td>
+    <td>Automatic archiving (MySQL, PG)</td>
+    <td>Manual (MySQL)</td>
+    <td>X</td>
+    <td>Manual</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>Data Tracking and Rollback</td>
+    <td>Automatic parsing of Binlog to generate in reverse</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>Data Generation</td>
+    <td>Supported, simulation template customization</td>
+    <td>X</td>
+    <td>X</td>
+    <td>Support for test data generation</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td rowspan="2">Performance Diagnosis</td>
+    <td>Slow SQL Performance Analysis</td>
+    <td>In-depth analysis + optimization suggestions (MySQL, PG, Oracle, Db2)</td>
+    <td>Support (MySQL)</td>
+    <td></td>
+    <td>Basic analysis</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>Session Management</td>
+    <td>View/Kill sessions</td>
+    <td>View/Kill sessions</td>
+    <td>View sessions</td>
+    <td>View/Kill sessions</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  </tbody></table></div>
+
+**Data Replication**
+  <div class='table_detail_wrapper'><table><thead>
+  <tr>
+    <th colspan="2">Comparison Items</th>
+    <th>NineData</th>
+    <th>Canal</th>
+    <th>DataX</th>
+    <th>FlinkCDC</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td rowspan="4">Basic Functions</td>
+    <td>Types of Supported Data Sources</td>
+    <td>60+</td>
+    <td>1</td>
+    <td>30</td>
+    <td>10+</td>
+  </tr>
+  <tr>
+    <td>Visual Data Source Configuration Management</td>
+    <td>Supported</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>User Management</td>
+    <td>Supported</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>Permission Management</td>
+    <td>Supported</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td rowspan="13">Core Functions</td>
+    <td>Table Structure Migration</td>
+    <td>Supported</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>Non-table Object Migration</td>
+    <td>Supported</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>Full Data Migration</td>
+    <td>Supported</td>
+    <td>Partially supported (large tables cannot be successfully migrated)</td>
+    <td>Supported</td>
+    <td>Supported</td>
+  </tr>
+  <tr>
+    <td>Incremental Data Synchronization (DML)</td>
+    <td>Supported</td>
+    <td>Supported</td>
+    <td>X</td>
+    <td>Supported</td>
+  </tr>
+  <tr>
+    <td>Incremental Structure Synchronization (DDL)</td>
+    <td>Supported</td>
+    <td>X</td>
+    <td>X</td>
+    <td>Only supports ADD Column</td>
+  </tr>
+  <tr>
+    <td>Data Filtering</td>
+    <td>Supported</td>
+    <td>Supported</td>
+    <td>Supported</td>
+    <td>Supported</td>
+  </tr>
+  <tr>
+    <td>Object Name Mapping</td>
+    <td>Supported</td>
+    <td>Supported</td>
+    <td>Supported</td>
+    <td>Supported</td>
+  </tr>
+  <tr>
+    <td>Data Transformation Processing</td>
+    <td>Supported</td>
+    <td>X</td>
+    <td>Supported</td>
+    <td>Supported</td>
+  </tr>
+  <tr>
+    <td>Structure Comparison</td>
+    <td>Supported</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>Full Data Comparison</td>
+    <td>Supported</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>Incremental Data Comparison</td>
+    <td>Supported</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>Modify Synchronization Objects</td>
+    <td>Supported</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>Visual Task Configuration and Management</td>
+    <td>Supported</td>
+    <td>X</td>
+    <td>X</td>
+    <td>Basic</td>
+  </tr>
+  <tr>
+    <td rowspan="6">Task Management</td>
+    <td>Task High Availability and Automatic Disaster Recovery (task level, server level)</td>
+    <td>Supported</td>
+    <td>X</td>
+    <td>X</td>
+    <td>Supported</td>
+  </tr>
+  <tr>
+    <td>Task Pause and Resume</td>
+    <td>Supported</td>
+    <td>Supported</td>
+    <td>Supported</td>
+    <td>Supported</td>
+  </tr>
+  <tr>
+    <td>Task Throttling</td>
+    <td>Supported</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>Alerts</td>
+    <td>Supported</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>Visual Monitoring</td>
+    <td>Supported</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>Data SQL Query Window</td>
+    <td>Supported</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+</tbody></table></div>
