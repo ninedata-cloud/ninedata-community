@@ -57,7 +57,7 @@ Powered by self-developed CDC technology, it handles database migration, synchro
 1. Log into the server’s CLI and run:
 
    ```
-   docker run -p 9999:9999 --privileged -v /opt/ninedata:/u01 --name ninedata -d swr.cn-east-3.myhuaweicloud.com/ninedata/ninedata:latest
+   docker run -p 9999:9999 --privileged -v /opt/ninedata:/u01 --name ninedata -d ninedata/ninedata:latest
    ```
 
    **Parameter Details**
