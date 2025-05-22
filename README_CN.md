@@ -62,7 +62,7 @@ NineData 社区版是一个完全离线运行的**本地化部署**版本，无�
 1. 登录服务器的命令行窗口，执行如下命令：
 
    ```
-   docker run -p 9999:9999 --privileged -v /opt/ninedata:/u01 --name ninedata -d swr.cn-east-3.myhuaweicloud.com/ninedata/ninedata:latest
+   docker run -p 9999:9999 --privileged -v /opt/ninedata:/u01 --name ninedata -d ninedata/ninedata:latest
    ```
 
    参数说明
