@@ -2,7 +2,7 @@
 
 ### Version: 4.2.0 (Officially released on June 10, 2025)
 
-| Module<div style={{width:'50pt'}}></div> | Feature<div style={{width:'100pt'}}></div> | Release Notes                                                |
+| Module | Feature | Release Notes                                                |
 | ---------------------------------------- | ------------------------------------------ | ------------------------------------------------------------ |
 | **Service Deployment**                   | Image Optimization                         | **Feature Optimization**<br />Optimized image size, reducing it by approximately 1GB, significantly improving image download and deployment efficiency. |
 | **Product Features**                     | Database DevOps                            | **New Features**<ul><li>SQL Window (Milvus):<ul><li>Added support for Milvus vector database: supports the full data source management lifecycle (create/edit/delete).</li><li>Provides dual-mode operation: supports both visual SQL operations and native API requests.</li></ul></li></ul>**Feature Optimization**<ul><li>SQL Window (Kingbase):<ul><li>Architecture Separation: Split KingBase into independent data source types `KingBase for Oracle` and `KingBase for PostgreSQL`.</li><li>Enhanced Navigation Tree: Added right-click functionality in the left sidebar for quick creation/refresh/script generation, etc.</li></ul></li></ul>**Bug Fixes**<ul><li>Sensitive Data Scanning: Fixed issue with invalid full database scans during periodic task scheduling.</li><li>Syntax Parsing Engine: Fixed issues with parsing MySQL stored procedures and Oracle Package key syntax anomalies.</li></ul> |
