@@ -1,6 +1,6 @@
 # NineData Community Edition Release Note
 
-### Version: 4.4.0 (Official Release on August 13， 2025)
+### Version: 4.4.0 (Official Release on August 13, 2025)
 
 | Module | Feature | Release Details                                              |
 | ---------------------------------------- | ------------------------------------------ | ------------------------------------------------------------ |
