@@ -1,5 +1,12 @@
 # NineData Community Edition Release Note
 
+### Version: 4.8.0 (Officially Released on 2026.01.15)
+
+| Module | Feature | Release Details                                              |
+| ------------------------------------ | -------------------------------------- | ------------------------------------------------------------ |
+| **Product Features**                 | Database DevOps                        | **Enhancements**<ul><li>SQL Console (PostgreSQL-compatible databases): Optimized the default `search_path` behavior. When a query uses unqualified object names (for example, `SELECT * FROM my_table`), the system now resolves schemas in the order **current schema > public > “$user” (schema with the same name as the current user)**, improving SQL compatibility and execution success rates.</li><li>Data Archiving & Cleanup: Added support for task termination.</li></ul>**Bug Fixes**<ul><li>Data Import: Fixed inaccurate permission checks in table-level import scenarios.</li><li>Slow Query Analysis (MySQL): Fixed compatibility issues when collecting data under specific character sets.</li></ul> |
+| **Product Features**                 | Data Replication & Comparison          | <strong>New Features</strong><br />Added support for schema replication, full replication, incremental replication, and consistency comparison for the following data sources:<ul><li>PostgreSQL > TiDB</li><li>PostgreSQL > PolarDB PostgreSQL</li><li>PostgreSQL > TDSQL PostgreSQL</li></ul><strong>Enhancements</strong><ul><li>PostgreSQL homogeneous replication: Enhanced replication support for index- and constraint-related DDL statements.</li><li>MySQL 9.x compatibility: Added support for MySQL 9.x as either a source or a target for data replication and comparison.</li><li>MySQL > PostgreSQL: Improved synchronization support for `CREATE TABLE ... LIKE` syntax in cross-engine replication scenarios.</li><li>PostgreSQL as a source: Enhanced replication support for large TOAST fields.</li></ul> |
+
 ### Version: 4.7.0 (Officially Released on 2025.12.04)
 
 | Module | Feature | Release Details                                              |
