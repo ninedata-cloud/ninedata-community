@@ -1,6 +1,6 @@
 # NineData Community Edition
 
-Open-source, self-hosted platform for database change management, data replication, and database comparison.
+Self-hosted platform for database change management, data replication, and database comparison.
 
 [中文文档](README_CN.md) | [English Documentation](README.md)
 
