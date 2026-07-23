@@ -1,5 +1,13 @@
 # NineData Community Edition Release Note
 
+### Version: 5.2.0 (Official Release of Community Edition on 2026.07.23)
+
+| Module | Feature | Release Details                                              |
+| ---------------------------------------- | ------------------------------------------ | ------------------------------------------------------------ |
+| **Product Features**                     | Database DevOps                            | **New Features**<ul><li>**Data Sources**: Added support for onboarding data sources with Alibaba Cloud KMS access credentials.</li></ul>**Feature Enhancements**<ul><li>**SQL Console (Oracle)**: Added Package to object type searches.</li><li>**SQL Console (Greenplum)**: Aligned the left-side object tree with PostgreSQL capabilities, including function editing and debugging.</li></ul> |
+| **Product Features**                     | AI AGENT                                   | **New Features**<ul><li>**NineData Skill**: Officially released NineData Skill, enabling enterprise AI Agents to securely access and operate databases through NineData, including SQL execution and SQL ticket creation and management.</li><li>**ChatDBA Text2SQL**: Added built-in Text2SQL capabilities for natural-language SQL development and data queries, SQL anomaly diagnosis, and automated test data generation.</li><li>**ChatDBA Web Search and Collection**: Added web search and content collection for database troubleshooting and technical questions, providing access to current information and authoritative documentation.</li><li>**ChatDBA and SQL IDE Integration**: Added SQL context sharing between ChatDBA and SQL IDE.</li></ul> |
+| **Product Features**                     | Data Replication & Comparison              | **New Features**<ul><li>**Data Replication**: Added support for 97 data replication paths.</li><li>**Data Comparison**: Added support for 97 data comparison paths.</li><li>**Schema Comparison OpenAPI**: Added APIs to create, query, start, and stop tasks, and retrieve task details.</li><li>**Data Comparison OpenAPI**: Added APIs to create, query, start, and stop tasks, and retrieve task details.</li></ul>**Feature Enhancements**<ul><li>**OceanBase MySQL / OceanBase Oracle**: Added data replication and comparison support for OceanBase MySQL V4.0 and OceanBase Oracle V4.0.</li><li>**CDC for MySQL-Compatible Databases**: Enhanced CDC replication performance for MySQL, PolarDB MySQL, TaurusDB MySQL, TDSQL-C MySQL, and Aurora MySQL. Multithreaded binlog collection and parsing more than doubled log parsing throughput.</li></ul> |
+
 ### Version: 5.1.0 (Official Release of Community Edition on 2026.06.17)
 
 | Module | Feature | Release Details                                              |
